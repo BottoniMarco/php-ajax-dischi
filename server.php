@@ -3,4 +3,6 @@
   header("Content-type: application/json");
 
   echo json_encode($database) ;
+
+  echo "genre: " .$_GET["genre"];
 ?>

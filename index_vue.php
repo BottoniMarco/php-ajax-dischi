@@ -30,6 +30,15 @@
             <p>{{ album.year }}</p>
           </div>
         </div>
+        <form  action="server.php" method="get">
+          <select  name="genre">
+            <option value="Rock">Rock</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Pop">Pop</option>
+            <option value="Metal">Metal</option>
+          </select>
+          <button type="submit" name="button">INVIA</button>
+        </form>
       </div>
     </main>
   </div>

@@ -1854,8 +1854,7 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   },
   mounted: function mounted() {
     var self = this;
-    alert("funziona");
-    axios.get('server.php').then(function (result) {
+    axios.get('../server.php').then(function (result) {
       var albumSpecs = result.data;
       self.albums = albumSpecs;
       console.log("album ", self.albums);

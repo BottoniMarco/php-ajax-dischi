@@ -9,13 +9,11 @@ var app = new Vue (
     },
     mounted: function () {
       const self = this;
-      alert("funziona");
-      axios. get('server.php')
+      axios. get('../server.php')
       .then( function (result) {
         let albumSpecs = result.data;
         self.albums = albumSpecs;
         console.log("album ",self.albums);
-
       });
     }
   }
