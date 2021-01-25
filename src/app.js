@@ -9,7 +9,7 @@ var app = new Vue (
     },
     mounted: function () {
       alert("funziona");
-      axios. get('https://flynn.boolean.careers/exercises/api/array/music')
+      axios. get('server.php')
       .then( function (result) {
         console.log(result.data);
       });
