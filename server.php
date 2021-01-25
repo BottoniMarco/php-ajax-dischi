@@ -6,11 +6,11 @@
 
   foreach ($database as $album ) {
     foreach ($album as $genere => $value) {
-      if ($genere == "genre") {
-        // code...
-        echo $value. "    ";
+      if ($genere == $selected_genre) {
+        echo json_encode($value. "    ");
       }
     }
   }
-  echo "genre: " .$_GET["genre"];
+  $selected_genre = $_GET["genre"];
+  echo $selected_genre;
 ?>
