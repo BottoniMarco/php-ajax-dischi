@@ -9,18 +9,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-header {
-  height: 50px;
-  width: 100%;
-  background-color: black;
-  line-height: 50px;
-  padding: 0 215px;
-}
-header i {
-  font-size: 35px;
-  color: green;
-}
-
 #wrapper {
   display: flex;
   justify-content: space-around;
@@ -54,4 +42,16 @@ header i {
 .low-specs {
   color: white;
   padding-top: 5px;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  line-height: 50px;
+  padding: 0 285px;
+}
+header i {
+  font-size: 35px;
+  color: green;
 }

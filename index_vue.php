@@ -1,5 +1,5 @@
 <?php
-  include __DIR__ . '/template/db.php';
+  // include __DIR__ . '/template/db.php';
 ?>
 
 <!DOCTYPE html>
@@ -15,28 +15,16 @@
   <title>Document</title>
 </head>
 <body>
-  <header>
-    <i class="fab fa-spotify"></i>
-  </header>
-  <main>
-    <div id="wrapper">
-      <?php
-      for ($i=0; $i < count($database); $i++) {
-        $album = $database[$i];
-
-        ?>
-      <div class="album" >
-        <img src="<?php echo $album["poster"] ?>" alt=""
-        >
-        <h4><?php echo $album["title"] ?></h4>
-        <div class="low-specs">
-          <p><?php echo $album["author"] ?></p>
-          <p><strong> <?php echo $album["year"] ?> </strong></p>
-        </div>
+  <div id="app">
+    <header>
+      <i class="fab fa-spotify"></i>
+    </header>
+    <main>
+      <div id="wrapper">
       </div>
-    <?php };  ?>
-    </div>
 
-  </main>
+    </main>
+  </div>
+  <script src="js/app.js" charset="utf-8"></script>
 </body>
 </html>
