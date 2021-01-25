@@ -5,13 +5,17 @@ var app = new Vue (
   {
     el:"#app",
     data:{
-      logo:"mimmo"
+      albums:[],
     },
     mounted: function () {
+      const self = this;
       alert("funziona");
       axios. get('server.php')
       .then( function (result) {
-        console.log(result.data);
+        let albumSpecs = result.data;
+        self.albums = albumSpecs;
+        console.log("album ",self.albums);
+
       });
     }
   }

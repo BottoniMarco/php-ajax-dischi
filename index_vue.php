@@ -21,8 +21,16 @@
     </header>
     <main>
       <div id="wrapper">
+        <div class="album" v-for="album in albums" >
+          <img :src="album.poster" alt=""
+          >
+          <h4 >{{ album.title }}</h4>
+          <div class="low-specs">
+            <p>{{ album.author }}</p>
+            <p>{{ album.year }}</p>
+          </div>
+        </div>
       </div>
-
     </main>
   </div>
   <script src="js/app.js" charset="utf-8"></script>

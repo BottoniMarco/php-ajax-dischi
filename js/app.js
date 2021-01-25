@@ -1850,12 +1850,15 @@ var axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js").de
 var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   el: "#app",
   data: {
-    logo: "mimmo"
+    albums: []
   },
   mounted: function mounted() {
+    var self = this;
     alert("funziona");
     axios.get('server.php').then(function (result) {
-      console.log(result.data);
+      var albumSpecs = result.data;
+      self.albums = albumSpecs;
+      console.log("album ", self.albums);
     });
   }
 });
