@@ -32,6 +32,7 @@
         </div>
         <form  action="server.php" method="get">
           <select  name="genre">
+            <option value="All">All</option>
             <option value="Rock">Rock</option>
             <option value="Jazz">Jazz</option>
             <option value="Pop">Pop</option>
