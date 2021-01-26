@@ -18,6 +18,15 @@
   <div id="app">
     <header>
       <i class="fab fa-spotify"></i>
+      <select  name="genre" v-model="gen">
+        <option value="">All</option>
+        <option value="Rock">Rock</option>
+        <option value="Jazz">Jazz</option>
+        <option value="Pop">Pop</option>
+        <option value="Metal">Metal</option>
+      </select>
+      <button type="button" name="button" @click="filter()" >INVIA</button>
+
     </header>
     <main>
       <div id="wrapper">
@@ -30,16 +39,6 @@
             <p>{{ album.year }}</p>
           </div>
         </div>
-        <form  action="server.php" method="get">
-          <select  name="genre">
-            <option value="All">All</option>
-            <option value="Rock">Rock</option>
-            <option value="Jazz">Jazz</option>
-            <option value="Pop">Pop</option>
-            <option value="Metal">Metal</option>
-          </select>
-          <button type="submit" name="button">INVIA</button>
-        </form>
       </div>
     </main>
   </div>
